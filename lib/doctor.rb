@@ -1,4 +1,3 @@
-require 'pry'
 class Doctor
   attr_accessor :name
  
@@ -26,4 +25,5 @@ class Doctor
   def patients
     appointments.collect{|a|a.patient}
   end
+  
 end
