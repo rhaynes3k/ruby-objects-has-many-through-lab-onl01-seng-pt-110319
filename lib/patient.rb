@@ -12,4 +12,11 @@ class Patient
     @@all
   end
   
+  def new_appointment(doctor, date)
+    Appointment.new(self, date, doctor)
+  end
+  
+  def appointments
+    Appointment.all.each{|a|a.name == self}
+  end
 end

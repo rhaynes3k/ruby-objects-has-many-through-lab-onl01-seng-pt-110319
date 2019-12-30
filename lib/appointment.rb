@@ -15,7 +15,7 @@ class Appointment
   end
   
   def patient
-    self.all.select{|p|p.name}
+    self.doctor.patients.find{|p|p}
   end
   
 end
