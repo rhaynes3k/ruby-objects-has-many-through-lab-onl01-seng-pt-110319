@@ -15,7 +15,8 @@ class Appointment
   end
   
   def patient
-    self.doctor.patients.find do|p|p end
+    doctor.patients.find do|p|p end
+#binding.pry    
   end
   
 end
